@@ -135,6 +135,7 @@ void setup(){
   MDNS.addService("http","tcp",80);
 
   SPIFFS.begin();
+  //SD.begin();
 
   ws.onEvent(onWsEvent);
   server.addHandler(&ws);
